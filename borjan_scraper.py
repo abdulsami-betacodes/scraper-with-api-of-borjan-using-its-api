@@ -19,7 +19,7 @@ from datetime import datetime
 BASE_URL      = "https://www.borjan.com.pk"
 API_ENDPOINT  = f"{BASE_URL}/products.json"
 LIMIT         = 250          # Max Shopify allows per page
-MAX_WORKERS   = 10           # Concurrent page fetches
+MAX_WORKERS   = 10          # Concurrent page fetches
 #OUTPUT_FILE   = "borjan_products.csv"
 OUTPUT_FILE   = "borjan_products.json"
 HEADERS = {

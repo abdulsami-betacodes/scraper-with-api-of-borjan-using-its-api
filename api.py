@@ -27,8 +27,7 @@ app = FastAPI(title="Borjan Scraper API", version="1.0.0")
 @app.post("/scrape")
 async def scrape():
 
-    print("⏳ Scraping started...")
-
+    print("⏳ Scraping started...")       
     semaphore = asyncio.Semaphore(10)
     async with aiohttp.ClientSession() as session:
         raw = await fetch_all_products(session, semaphore)
